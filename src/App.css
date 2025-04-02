@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body {
+  font-family: sans-serif; /* A clean, readable font */
+  background-color: #f8f8f8; /* Light gray background */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  min-height: 100vh; /* Make sure it covers the whole viewport */
+  margin: 0; /* Remove default body margin */
+}
+
+#quote-box {
+  background-color: white; /* White background for the quote box */
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 30px; /* Add some padding inside the box */
+  width: 80%; /* Set a maximum width for responsiveness */
+  max-width: 600px; /* Further limit the width on larger screens */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center the text within the box */
+  margin: 0 auto;
+}
+
+#text {
+  font-size: 1.5em;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #333; /* Dark gray text */
+}
+
+#author {
+  font-style: italic;
+  color: #777; /* Slightly lighter gray for the author */
+  text-align: right; /* Align the author to the right */
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #007bff; /* Blue button */
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-right: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#tweet-quote {
+  background-color: #1da1f2; /* Twitter blue */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  text-decoration: none; /* Remove underline from link */
+}
+
+#tweet-quote:hover {
+  background-color: #0c8cd5; /* Darker Twitter blue on hover */
 }
